@@ -7,33 +7,42 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Starbucks Coffee Company</title>
 </head>
-<body>
+<body class="max-w-[1440px] m-auto">
     <div id="container" class="relative">
         <header class="">
             <div class="h-[4rem] flex justify-between items-center px-4 py-10 border-b-[3px]">
                 <a href="#">
                     <img class="w-[3rem]" src="img/logo.png" alt="logo">
                 </a>
-                <i class="fa-solid fa-bars text-[1.7rem] text-gray-600"></i>
+                <button onclick="openSideBar()" class="lg:hidden">
+                    <i class="fa-solid fa-bars text-[1.7rem] text-gray-600"></i>
+                    <i class="fa-solid fa-x text-[1.7rem] text-gray-600 hidden"></i>
+                </button>
             </div>
         </header>
         <!-- Mobile Navbar Menu -->
-        <ul id="mobileNav" class="w-[70%] bg-sky-400 h-screen absolute right-[-70%] transition-all delay-150">
-            <li>
+        <ul id="mobileNav" class="w-[70%] h-screen fixed right-[-100%]  transition-all duration-300 border-l pl-4 py-4 lg:hidden">
+            <li class="p-4 text-[1.2rem]">
                 <a href="#">MENU</a>
             </li>
-            <li>
+            <li class="p-4 text-[1.2rem]">
                 <a href="#">REWARDS</a>
             </li>
-            <li>
+            <li class="p-4 text-[1.2rem]">
                 <a href="#">GIFT CARDS</a>
             </li>
-            <div>
-                <a href="#">Sign in</a>
-                <a href="#">Join now</a>
+            <div class="w-[90%] h-[2px] m-auto bg-gray-300"></div>
+
+            <div class="flex gap-2 my-[1.5rem] ">
+                <div class="border border-black rounded-2xl px-4 py-[3px]">
+                    <a href="#">Sign in</a>
+                </div>
+                <div class="border rounded-2xl px-4 py-[3px] bg-[#000000] text-white">
+                    <a href="#">Join now</a>
+                </div>
             </div>
             <div>
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-location-dot text-[1.2rem] ml-3"></i>
                 <a href="#">Find a store</a>
             </div>
         </ul>

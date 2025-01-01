@@ -1,9 +1,11 @@
 const faBars = document.querySelector('.fa-bars')
-console.log(faBars);
+const faX = document.querySelector('.fa-x')
 const mobileNav = document.querySelector('#mobileNav')
 
-faBars.addEventListener("click", () => {
-    mobileNav.classList.toggle('right-[0]')
-    console.log("Works");
+function openSideBar() {
+    mobileNav.classList.toggle('right-[0%]')
+    faBars.classList.toggle('hidden')
+    faX.classList.toggle('hidden')
+}
 
-})
+
