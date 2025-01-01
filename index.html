@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Starbucks Coffee Company</title>
+</head>
+<body>
+    <div id="container" class="relative">
+        <header class="">
+            <div class="h-[4rem] flex justify-between items-center px-4 py-10 border-b-[3px]">
+                <a href="#">
+                    <img class="w-[3rem]" src="img/logo.png" alt="logo">
+                </a>
+                <i class="fa-solid fa-bars text-[1.7rem] text-gray-600"></i>
+            </div>
+        </header>
+        <!-- Mobile Navbar Menu -->
+        <ul id="mobileNav" class="w-[70%] bg-sky-400 h-screen absolute right-[-70%] transition-all delay-150">
+            <li>
+                <a href="#">MENU</a>
+            </li>
+            <li>
+                <a href="#">REWARDS</a>
+            </li>
+            <li>
+                <a href="#">GIFT CARDS</a>
+            </li>
+            <div>
+                <a href="#">Sign in</a>
+                <a href="#">Join now</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">Find a store</a>
+            </div>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
