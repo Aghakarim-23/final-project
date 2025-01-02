@@ -10,10 +10,38 @@
 <body class="max-w-[1440px] m-auto">
     <div id="container" class="relative">
         <header class="">
-            <div class="h-[4rem] flex justify-between items-center px-4 py-10 border-b-[3px]">
+            <div class="h-[4rem] flex justify-between  items-center px-4 py-10 border-b-[3px]">
                 <a href="#">
                     <img class="w-[3rem]" src="img/logo.png" alt="logo">
                 </a>
+                <!-- desktop navbar layout -->
+        <div class="w-[90%] items-center hidden lg:flex justify-between gap-4">
+            <ul class="flex gap-6"> 
+                <li>
+                    <a href="#" class="font-bold text-[1rem]">MENU</a>
+                </li>
+                <li>
+                    <a href="#" class="font-bold text-[1rem]">REWARDS</a>
+                </li>
+                <li>
+                    <a href="#" class="font-bold text-[1rem]">GIFT CARDS</a>
+                </li>
+            </ul>
+            <div id="rightNav" class="flex items-center gap-4">
+                <div class="">
+                    <i class="fa-solid fa-location-dot text-[1.2rem] mr-2"></i>
+                    <a href="#" class="font-medium">Find a store</a>
+                </div>
+                <div class="flex gap-4">
+                    <div class="border border-black rounded-2xl px-4 py-[3px]">
+                        <a href="#">Sign in</a>
+                    </div>
+                    <div class="border rounded-2xl px-4 py-[3px] bg-[#000000] text-white">
+                        <a href="#">Join now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
                 <button onclick="openSideBar()" class="lg:hidden">
                     <i class="fa-solid fa-bars text-[1.7rem] text-gray-600"></i>
                     <i class="fa-solid fa-x text-[1.7rem] text-gray-600 hidden"></i>
@@ -43,9 +71,10 @@
             </div>
             <div>
                 <i class="fa-solid fa-location-dot text-[1.2rem] ml-3"></i>
-                <a href="#">Find a store</a>
+                <a href="#" class="ml-2">Find a store</a>
             </div>
         </ul>
+        
     </div>
     <script src="script.js"></script>
 </body>
