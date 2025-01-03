@@ -9,3 +9,18 @@ function openSideBar() {
 }
 
 
+    const faChevronDown = document.querySelectorAll(".fa-chevron-down")
+
+    const accordion = document.querySelectorAll(".accordion")
+    faChevronDown.forEach(chevron => {
+        chevron.addEventListener("click", () => {
+            chevron.classList.toggle("rotate-180")
+            const accordionContent = chevron.parentElement.nextElementSibling;
+            accordionContent.classList.toggle("h-[50%]")
+            accordionContent.classList.toggle("overflow-hidden")
+
+        })
+        })
+      
+    
+
