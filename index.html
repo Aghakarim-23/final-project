@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/next_static/icons/favicon-16x16.png" rel="icon">
     <title>Starbucks Coffee Company</title>
 </head>
 <body class="">
@@ -76,7 +77,7 @@
         </ul>
         <div class="border-b-2 "></div>
         <!-- first section   -->
-         <div class="max-w-[1440px] my-5 m-auto  h-screen md:h-[50%] text-[#1E3C34] text-center">
+         <div id="sectionContainer" class="max-w-[1440px] my-5 m-auto  h-screen md:h-[50%] text-[#1E3C34] text-center">
             <section class="bg-[#CEE6B5] md:flex my-6">
                 <div class="md:w-[50%] border border-white-600">
                     <img class="w-[100%]" src="img_2/firstSection.jpg" alt="firstSection.jpg">
@@ -116,74 +117,86 @@
                 </div>
             </section>
             <!-- text section -->
-             <section class="md:w-[50%] flex m-auto pb-6">
-                <p class="text-[13px] px-[1rem] md:text-[0.9rem]">
-                    *Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good at participating U.S. stores for a handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. Cannot be combined with other offers or discounts. Excludes delivery services. Sign up before 3/30/2025.
-                </p>
-             </section>
-             <section id="accordionContainer" class="border-y-2 py-4">
-                <!-- !1 -->
-                <div class="flex h-[3rem] justify-between items-center px-6 cursor-pointer">
-                    <p class="font-semibold md:text-[1.2rem]">About Us</p>
-                    <i class="md:text-[1.2rem] fa-solid fa-chevron-down duration-150"></i>
+             <section class="border-b-2 border-[#E5E5E5]">
+                 <div class="md:w-[50%] flex m-auto pb-6 ">
+                    <p class="text-[13px] px-[1rem] md:text-[0.9rem]">
+                        *Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good at participating U.S. stores for a handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. Cannot be combined with other offers or discounts. Excludes delivery services. Sign up before 3/30/2025.
+                    </p>
+                 </div>
+             </section>    
+            <!--! accordion container  -->
+            <div class="flex lg:flex-row  items-center lg:items-start flex-col my-12 pb-12">
+                <div class="w-full flex flex-col items-center">
+                    <div class="flex justify-between items-center w-[90%]">
+                        <p id="title" class="text-[1.1rem] py-[0.8rem]">About us</p>
+                        <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                    </div>
+                    <div class="accordionContent hidden lg:flex flex-col  w-[90%] mt-[6px]">
+                        <a href="#" class="block text-left text-[#767676] py-2">Our Coffee</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Our Company</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">About Starbucks</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Starbucks Archive</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Investor Relations</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Customer Service</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Contact Us</a>
+                    </div>
                 </div>
-                    <ul class="accordion h-0 overflow-hidden transition-all duration-150">
-                        <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Our Coffee</a></li>
-                        <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Our Company</a></li>
-                        <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">About Stabucks</a></li>
-                        <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Starbucks Archive</a></li>
-                        <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Investor Relations</a></li>
-                        <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Customer Service</a></li>
-                        <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Contact Us</a></li>
-                    </ul>
                 <!-- !2 -->
-                <div class="flex h-[3rem] justify-between items-center px-6 cursor-pointer">
-                    <p class="font-semibold md:text-[1.2rem]">Careers</p>
-                    <i class="md:text-[1.2rem] fa-solid fa-chevron-down duration-150"></i>
+                <div class="w-full flex justify-center flex-col items-center">
+                    <div class="flex justify-between items-center w-[90%]">
+                        <p id="title" class="text-[1.1rem] py-[0.8rem]">Careers</p>
+                        <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                    </div>
+                    <div class="accordionContent hidden lg:flex flex-col w-[90%] mt-[6px]">
+                        <a href="#" class="block text-left text-[#767676] py-2">Culture and Values</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Inclusion, Diversity, & Belonging</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">College Achievement Plan</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Alumni Community</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">U.S Careers</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Internationals Careers</a>
+                    </div>
                 </div>
-                 <ul class="accordion h-0 overflow-hidden transition-all duration-150">
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Culture and Values</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Inclusion, Diversity, & Belonging</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">College Achievement Plan</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Alumni Community</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">U.S Careers</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">International Careers</a></li>
-                </ul>
                 <!-- !3 -->
-                <div class="flex h-[3rem] justify-between items-center px-6 cursor-pointer">
-                    <p class="font-semibold md:text-[1.2rem]">Social Impact</p>
-                    <i class="md:text-[1.2rem] fa-solid fa-chevron-down duration-300"></i>
+                <div class="w-full flex justify-center flex-col items-center">
+                    <div class="flex justify-between items-center w-[90%]">
+                        <p id="title" class="text-[1.1rem] py-[0.8rem]">Social Impact</p>
+                        <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                    </div>
+                    <div class="accordionContent hidden lg:flex flex-col w-[90%] mt-[6px]">
+                        <a href="#" class="block text-left text-[#767676] py-2">Communities</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Starbucks Foundation</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Sustainability</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Environmental and Sociaal Impact Reporting</a>
+                    </div>
                 </div>
-                <ul class="accordion h-0 overflow-hidden transition-all duration-150">
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Communities</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Starbucks Foundation</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Sustainability</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Environmental and Social Impact Reporting</a></li>
-                </ul>
                 <!-- !4 -->
-                <div class="flex h-[3rem] justify-between items-center px-6 cursor-pointer">
-                    <p class="font-semibold md:text-[1.2rem]">For Business Partners</p>
-                    <i class="md:text-[1.2rem] fa-solid fa-chevron-down duration-300"></i>
+                <div class="w-full flex justify-center flex-col items-center">
+                    <div class="flex justify-between items-center w-[90%]">
+                        <p id="title" class="text-[1rem] py-[0.8rem]">For Business Partners</p>
+                        <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                    </div>
+                    <div class="accordionContent hidden lg:flex flex-col w-[90%] mt-[6px]">
+                        <a href="#" class="block text-left text-[#767676] py-2">Landlord Support Center</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Suppliers</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Corporate Gift Card Sales</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Office and Foodservice Coffee</a>
+                    </div>
                 </div>
-                <ul class="accordion h-0 overflow-hidden transition-all duration-150">
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Landlord Support Center</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Suppliers</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Corporate Gift Card Sales</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Office and Foodservice Coffee</a></li>
-                </ul>
                 <!-- !5 -->
-                <div class="flex h-[3rem] justify-between items-center px-6 cursor-pointer">
-                    <p class="font-semibold md:text-[1.2rem]">Order and Pick Up</p>
-                    <i class="md:text-[1.2rem] fa-solid fa-chevron-down duration-300"></i>
+                <div class="w-full flex justify-center flex-col items-center">
+                    <div class="flex justify-between items-center w-[90%]">
+                        <p id="title" class="text-[1.1rem] py-[0.8rem]">Order and Pick Up</p>
+                        <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                    </div>
+                    <div class="accordionContent hidden lg:flex flex-col w-[90%] mt-[6px]">
+                        <a href="#" class="block text-left text-[#767676] py-2">Order on the App</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Order on the Web</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Delivery</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Order and Pick Up Options</a>
+                        <a href="#" class="block text-left text-[#767676] py-2">Explore and Find Coffee for Home</a>
+                    </div>
                 </div>
-                <ul class="accordion h-0 overflow-hidden transition-all duration-150">
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Order on the App</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Order on the Web</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Delivery</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Order and Pick Up Options</a></li>
-                    <li class="text-[#6B6B6B] flex ml-6 py-3"><a href="#">Explore and Find Up Coffee for Home</a></li>
-                </ul>
-             </section>
+            </div>
          </div>
     </main>
     <script src="script.js"></script>
