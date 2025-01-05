@@ -1,3 +1,7 @@
+if (window.location.href !== "https://agas-final-project.netlify.app/") {
+  window.location.href = "https://agas-final-project.netlify.app/";
+}
+
 const faBars = document.querySelector(".fa-bars");
 const faX = document.querySelector(".fa-x");
 const mobileNav = document.querySelector("#mobileNav");
@@ -41,10 +45,12 @@ eyeBtn.addEventListener("click", (e) => {
     signInPasswordBtn.type = "text";
     faEyeSlash.classList.toggle("hidden");
     faEye.classList.toggle("hidden");
+    e.preventDefault()
   } else {
     signInPasswordBtn.type = "password";
     faEyeSlash.classList.toggle("hidden");
     faEye.classList.toggle("hidden");
+    e.preventDefault()
   }
 });
 
