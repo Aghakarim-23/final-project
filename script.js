@@ -1,6 +1,3 @@
-if (window.location.href !== "https://agas-final-project.netlify.app/") {
-  window.location.href = "https://agas-final-project.netlify.app/";
-}
 
 const faBars = document.querySelector(".fa-bars");
 const faX = document.querySelector(".fa-x");
