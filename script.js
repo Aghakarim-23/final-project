@@ -1,4 +1,3 @@
-
 const faBars = document.querySelector(".fa-bars");
 const faX = document.querySelector(".fa-x");
 const mobileNav = document.querySelector("#mobileNav");
@@ -32,29 +31,36 @@ const faEyeSlash = document.querySelector(".fa-eye-slash");
 
 const signInPasswordBtn = document.querySelector("#signInPasswordBtn");
 
-const eyeBtn = document.querySelector("#eyeBtn");
 
-eyeBtn.addEventListener("click", (e) => {
-  if (
-    e.target.classList.contains("fa-eye-slash") &&
-    signInPasswordBtn.type === "password"
-  ) {
+faEyeSlash.addEventListener("click", (e) => {
+  if (e.target.classList.contains("fa-eye-slash") && (signInPasswordBtn.type === "password")) {
     signInPasswordBtn.type = "text";
     faEyeSlash.classList.toggle("hidden");
     faEye.classList.toggle("hidden");
     e.preventDefault()
-  } else {
+  } 
+});
+
+faEye.addEventListener("click" , (e) => {
+  if(e.target.classList.contains("fa-eye") && (signInPasswordBtn.type === "text")){
     signInPasswordBtn.type = "password";
     faEyeSlash.classList.toggle("hidden");
     faEye.classList.toggle("hidden");
     e.preventDefault()
   }
-});
+})
 
 const faCheck = document.querySelector(".fa-check");
 const checkBoxInp = document.querySelector("#checkBoxInp");
 
-function iconCheckVisibilty() {
+faCheck.addEventListener("click", (e) => {
   checkBoxInp.classList.toggle("bg-green-700");
   checkBoxInp.classList.toggle("text-white");
-}
+  e.preventDefault()
+})
+
+
+console.log("wdwd");
+
+
+
