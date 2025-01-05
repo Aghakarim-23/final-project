@@ -25,3 +25,59 @@ let newDate = new Date().getFullYear();
 footerContent.innerHTML = `
         &#169; ${newDate} Starbucks Coffee Company. All rights reserved.
     `;
+
+    const faEye = document.querySelector(".fa-eye")
+    const faEyeSlash = document.querySelector(".fa-eye-slash")
+
+    const signInPasswordBtn = document.querySelector("#signInPasswordBtn")
+
+    const eyeBtn = document.querySelector("#eyeBtn")
+
+    eyeBtn.addEventListener("click" , (e) => {
+      if((e.target.classList.contains("fa-eye-slash")) && (signInPasswordBtn.type === "password")){
+        signInPasswordBtn.type = "text"
+        faEyeSlash.classList.toggle("hidden")
+        faEye.classList.toggle("hidden")
+        console.log("fa-eye-slash");
+      } else {
+        signInPasswordBtn.type = "password"
+        faEyeSlash.classList.toggle("hidden")
+        faEye.classList.toggle("hidden")
+        console.log("fa-eye");
+      }
+    })
+
+    
+    // faEyeSlash.addEventListener("click", () => {
+    //   if(signInPasswordBtn.type === "text"){
+    //     signInPasswordBtn.type = "password"
+    //     faEye.classList.toggle("hidden")
+    //     faEyeSlash.classList.toggle("hidden")
+    //     console.log("show");
+    //   }
+    // })
+    
+    // faEye.addEventListener("click", () => {
+    //   if(signInPasswordBtn.type === "password"){
+    //     signInPasswordBtn.type = "text"
+    //     faEyeSlash.classList.toggle("hidden")
+    //     faEye.classList.toggle("hidden")
+    //     console.log("hiddden");
+    //   }
+      
+    // })
+
+    // faEyeSlash.addEventListener("click" , () => {
+    //   if(signInPasswordBtn.type === "password") {
+    //      signInPasswordBtn.type = "text"
+    //      faEyeSlash.classList.toggle("hidden")
+    //      faEye.classList.toggle("hidden")
+    //   } else if (signInPasswordBtn.type === "text"){
+    //     signInPasswordBtn.type = "password"
+    //     console.log(":");
+    //   } 
+
+      
+    // })
+
+    
