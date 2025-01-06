@@ -14,119 +14,77 @@
         <header class="">
             <div class="h-[4rem] flex justify-between  items-center px-4 py-10  max-w-[1440px] m-auto">
                 <a href="index.html">
-                    <img class="w-[3rem]" src="/img_1/logo.png" alt="logo">
+                    <img class="w-[3rem]" src="img_1/logo.png" alt="logo">
                 </a>
-                <!-- desktop navbar layout -->
-        <div id="navbarDesktop" class="w-[90%] items-center hidden lg:flex justify-between gap-4 ">
-            <ul class="lg:h-[4rem] lg:flex lg:items-center gap-6"> 
-                <li class="lg:h-full lg:flex lg:items-center lg:border-b-[6px] lg:border-white">
-                    <a href="#" class="font-bold text-[1rem] hover:text-[#10754A]">MENU</a>
-                </li>
-                <li class="lg:h-full lg:flex lg:items-center lg:border-b-[6px] lg:border-white">
-                    <a href="#" class="font-bold text-[1rem] hover:text-[#10754A]">REWARDS</a>
-                </li>
-                <li class="lg:h-full lg:flex lg:items-center lg:border-b-[6px] lg:border-white">
-                    <a href="#" class="font-bold text-[1rem] hover:text-[#10754A]">GIFT CARDS</a>
-                </li>
-            </ul>
-            <div id="rightNav" class="lg:h-[4rem] flex items-center gap-4">
-                <div class="hover:text-[#10754A]">
-                    <i class="fa-solid fa-location-dot text-[1.2rem] mr-2 "></i>
-                    <a href="#" class="font-medium">Find a store</a>
-                </div>
-                <div class="flex gap-4">
-                    <div class="border border-black rounded-2xl px-4 py-[3px] hover:bg-[#E8E8E8] transition-all">
-                        <a href="signIn.html">Sign in</a>
-                    </div>
-                    <div class="border rounded-2xl px-4 py-[3px] bg-[#000000] text-white hover:bg-[#565656] transition-all">
-                        <a href="#">Join now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-                <button onclick="openSideBar()" class="lg:hidden">
-                    <i class="fa-solid fa-bars text-[1.7rem] text-gray-600"></i>
-                    <i class="fa-solid fa-x text-[1.7rem] text-gray-600 hidden"></i>
-                </button>
             </div>
         </header>
-        <!-- Mobile Navbar Menu -->
-        <ul id="mobileNav" class="w-[70%] bg-[#ffffff] border h-screen absolute translate-x-[142%] transition-all duration-300 border-l pl-4 py-4 lg:hidden ">
-            <li class="p-4 text-[1.2rem]">
-                <a href="#">MENU</a>
-            </li>
-            <li class="p-4 text-[1.2rem]">
-                <a href="#">REWARDS</a>
-            </li>
-            <li class="p-4 text-[1.2rem]">
-                <a href="#">GIFT CARDS</a>
-            </li>
-            <div class="w-[90%] h-[2px] m-auto bg-gray-300"></div>
-
-            <div class="flex gap-2 my-[1.5rem] ">
-                <div class="border border-black rounded-2xl px-4 py-[3px]">
-                    <a href="signIn.html">Sign in</a>
-                </div>
-                <div class="border rounded-2xl px-4 py-[3px] bg-[#000000] text-white">
-                    <a href="#">Join now</a>
-                </div>
-            </div>
-            <div>
-                <i class="fa-solid fa-location-dot text-[1.2rem] ml-3"></i>
-                <a href="#" class="ml-2">Find a store</a>
-            </div>
-        </ul>
+        
         <div class="border-b-2 "></div>
-        <!-- first section   -->
-         <div id="sectionContainer" class="max-w-[1440px] my-5 m-auto  h-screen md:h-[50%] text-[#1E3C34] text-center">
-            <section class="bg-[#CEE6B5] md:flex my-6">
-                    <div class="md:h-[50%] md:w-[50%]">
-                        <img class="md:h-full object-contain" src="img_2/firstSection.jpg" alt="firstSection.jpg">
-                    </div>
-                    <div class="md:h-[50%] md:m-auto md:gap-4 md:w-[50%] h-[60vh] lg:h-auto flex flex-col items-center justify-evenly gap-6 sm:gap-0 p-4 ">
-                        <p class="text-[2rem] font-semibold">The best of winter</p>
-                        <p class="text-[1.4rem] font-light">A new winter menu is here, featuring new Cortado alongside Pistachio beverages and Matcha Latte—now customized to your perfect level of sweetness.</p>
-                        <div class=" flex justify-center border border-[#1E3C34] px-4 rounded-2xl  hover:bg-[#BDD5A8] transition-all">
-                            <a href="#">Add to order</a>
+        <div id="sectionContainer" class="max-w-[1440px] my-5 m-auto  h-screen md:h-[50%] text-[#1E3C34] text-center">
+
+            <!-- !SigIn form -->
+             <form action="#" class="flex flex-col justify-center items-center md:w-[60%] lg:w-[40%] md:m-auto md:border p-6  md:shadow-lg rounded-xl">
+                <div class="flex flex-col">
+                    <h2 class="font-bold text-[1.5rem] md:text-[1.6rem] text-black">Create an account</h2>
+                    <p class="mt-4 text-[#6B6B6B] text-justify">Join Starbucks Rewards to earn Stars for free food and drinks, any way you pay. Get access to mobile ordering, a birthday Reward, and <a href="#" class="underline">more</a></p>
+                    <p class="text-left my-4"><span class="text-green-700">*</span>indicates required field</p>
+                </div>
+                <div class="w-[100%] flex flex-col gap-4">
+                    <div class="flex flex-col gap-6">
+                        <h2 class="font-bold text-black text-[1rem] text-left">Personal Information</h2>
+                        <div class="w-[100%] h-[3.5rem]  rounded-xl">
+                            <input class="w-full h-full border border-gray-600 rounded-xl focus:outline-green-700 pl-4 placeholder-black" type="text" required placeholder="First name"/>
+                        </div>
+                        <div class="relative w-[100%] h-[3.5rem] rounded-xl ">
+                            <input id="signInPasswordBtn" class="w-full h-full border border-gray-600 rounded-xl placeholder-black focus:outline-green-700 pl-4" required type="text" placeholder="Last name"/>
                         </div>
                     </div>
-                
-            </section>
-            <!-- second section  -->
-            <section class="bg-[#CEE6B5] md:flex my-6">
-                <div class="md:w-[50%] md:order-2 ">
-                    <img class="md:h-full object-contain" src="img_2/secondSection.jpg" alt="secondSection">
-                </div>
-                <div class="md:h-[50%] md:m-auto md:gap-4 md:w-[50%] order-0 h-[60vh] lg:h-auto flex flex-col items-center justify-evenly gap-6 sm:gap-0 p-4 ">
-                    <p class="text-[2rem] font-semibold">Your free coffee awaits</p>
-                    <p class="text-[1.4rem] font-light">Unlock Rewards from the very first sip, starting with a free handcrafted drink with qualifying purchase during your first week.*</p>
-                    <div class=" flex justify-center border border-[#1E3C34] px-4 rounded-2xl  hover:bg-[#BDD5A8] transition-all">
-                        <a href="#">Join now</a>
+
+                    <div class="flex flex-col gap-8">
+                        <h2 class="font-bold text-black text-[1rem] text-left">Account Security</h2>
+                        <div class="w-[100%] h-[3.5rem]  rounded-xl">
+                            <input class="w-full h-full border border-gray-600 rounded-xl focus:outline-green-700 pl-4 placeholder-black" type="text" required placeholder="Email adress"/>
+                            <p class="text-left text-[0.8rem] pl-4 mt-1">This will be your username</p>
+                        </div>
+                        <div class="relative w-[100%] h-[3.5rem] rounded-xl ">
+                            <input id="signInPasswordBtn" class="w-full h-full border border-gray-600 rounded-xl placeholder-black focus:outline-green-700 pl-4" required type="password" placeholder="Password"/>
+                            <i class="fa-regular fa-eye hidden absolute top-5 right-5"></i>
+                            <i class="fa-regular fa-eye-slash absolute top-5 right-5"></i>
+                        </div>
+                        <p class="text-left text-justify text-[0.8rem]">
+                            Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.
+                        </p>
+                        <div class="text-green-900 underline text-[0.9rem] text-left font-semibold">
+                            <a href="#">Already have a Starbucks gift card?</a>
+                        </div>
+                    </div>
+
+
+                    <div class="relative flex gap-1 items-center">
+                     <input id="checkBoxInp" type="checkbox" class="appearance-none w-[1.4rem] h-[1.4rem] border border-green-700 rounded-md bg-green-700">
+                     <span class="text-[14px]">Keep me signed in.</span>
+                     <a href="#" class="underline text-[14px] text-green-900 font-bold">Details</a>
+                     <button >
+                        <i class="fa-solid fa-check absolute top-1 left-1 text-white"></i>
+                    </button>
+                    </div>
+                    <div class="flex flex-col gap-2 items-start">
+                        <a href="#" class="block underline font-semibold text-green-800">Forgot your username</a>
+                        <a href="#" class="block underline font-semibold text-green-800">Forgot your password</a>
+                    </div>
+                    <div class="flex justify-end">
+                        <button class="bg-[#01754A] text-white w-[8rem] h-[3.5rem] shadow-lg rounded-full">Sign in</button>
                     </div>
                 </div>
-            </section>
-            <!-- third section  -->
-            <section class="bg-[#CEE6B5] md:flex my-6 text-black">
-                <div class="md:w-[50%]">
-                    <img class="md:h-full object-contain" src="img_2/thirdSection.jpg" alt="thirdSection">
-                </div>
-                <div class="md:h-[50%] md:m-auto md:gap-4 md:w-[50%] order-0 h-[60vh] lg:h-auto flex flex-col items-center justify-evenly gap-6 sm:gap-0 p-4 ">
-                    <p class="text-[2rem] font-semibold">From the birthplace of coffee</p>
-                    <p class="text-[1.4rem] font-light">With distinctive floral, tangerine and lemon balm notes, Single-Origin Ethiopia is a unique global favorite.</p>
-                    <div class=" flex justify-center border border-black px-4 rounded-2xl  hover:bg-[#BDD5A8] transition-all">
-                        <a href="#">Add to order</a>
-                    </div>
-                </div>
-            </section>
-            <!-- text section -->
-             <section class="border-b-2 border-[#E5E5E5]">
-                 <div class="md:w-[50%] flex m-auto pb-6 ">
-                    <p class="text-[13px] px-[1rem] md:text-[0.9rem]">
-                        *Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good at participating U.S. stores for a handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. Cannot be combined with other offers or discounts. Excludes delivery services. Sign up before 3/30/2025.
-                    </p>
-                 </div>
-             </section>    
-            <!--! accordion container  -->
+             </form>
+             <!-- starbucks reward -->
+              <div class="p-4 my-12">
+                <h5 class="text-[#01754A] font-semibold uppercase">Join Starbucks® Rewards</h5>
+                <p  class="text-[0.8rem] sm:text-[1.1rem] mt-4 md:w-[50%] md:m-auto">Join Starbucks® Rewards to earn free food and drinks, get free refills, pay and order with your phone, and more.</p>
+                <a href="#" class="text-[#01754A] border border-[#01754A] flex justify-center items-center m-auto rounded-full font-semibold w-[6rem] h-[1.8rem] mt-4">Join now</a>
+              </div>
+              <div class="border-b-2 "></div>
+             <!--! accordion container  -->
             <div class="flex lg:flex-row  items-center lg:items-start flex-col my-6 ">
                 <div class="w-full flex flex-col items-center">
                     <div class="flex justify-between items-center w-[90%]">
@@ -198,7 +156,7 @@
                         <a href="#" class="block text-left text-[#767676] py-2">Explore and Find Coffee for Home</a>
                     </div>
                 </div>
-            </div>
+            </div iv>
             <!-- social links -->
             <div class="flex h-[4rem] items-center gap-1 ml-5">
                 <div class="w-[2rem] h-[2rem] flex justify-center items-center">
@@ -244,8 +202,9 @@
                 </ul>
                 <h4 id="footerContent" class="text-left ml-[1.25rem] text-[0.78rem] md:text-[1rem] text-[#909090]"></h4>
             </footer>
-         </div>   
+        </div>
+    
     </main>
-    <script src="script.js"></script>
+    <script src="joinNow.js"></script>
 </body>
 </html>
