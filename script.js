@@ -25,10 +25,3 @@ let newDate = new Date().getFullYear();
 footerContent.innerHTML = `
         &#169; ${newDate} Starbucks Coffee Company. All rights reserved.
     `;
-
-
-
-
-
-
-

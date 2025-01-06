@@ -13,24 +13,29 @@ const faEyeSlash = document.querySelector(".fa-eye-slash");
 
 const signInPasswordBtn = document.querySelector("#signInPasswordBtn");
 
-
 faEyeSlash.addEventListener("click", (e) => {
-  if (e.target.classList.contains("fa-eye-slash") && (signInPasswordBtn.type === "password")) {
+  if (
+    e.target.classList.contains("fa-eye-slash") &&
+    signInPasswordBtn.type === "password"
+  ) {
     signInPasswordBtn.type = "text";
     faEyeSlash.classList.toggle("hidden");
     faEye.classList.toggle("hidden");
-    e.preventDefault()
-  } 
+    e.preventDefault();
+  }
 });
 
-faEye.addEventListener("click" , (e) => {
-  if(e.target.classList.contains("fa-eye") && (signInPasswordBtn.type === "text")){
+faEye.addEventListener("click", (e) => {
+  if (
+    e.target.classList.contains("fa-eye") &&
+    signInPasswordBtn.type === "text"
+  ) {
     signInPasswordBtn.type = "password";
     faEyeSlash.classList.toggle("hidden");
     faEye.classList.toggle("hidden");
-    e.preventDefault()
+    e.preventDefault();
   }
-})
+});
 
 const faCheck = document.querySelector(".fa-check");
 const checkBoxInp = document.querySelector("#checkBoxInp");
@@ -38,8 +43,8 @@ const checkBoxInp = document.querySelector("#checkBoxInp");
 faCheck.addEventListener("click", (e) => {
   checkBoxInp.classList.toggle("bg-green-700");
   checkBoxInp.classList.toggle("text-white");
-  e.preventDefault()
-})
+  e.preventDefault();
+});
 
 const faChevronDown = document.querySelectorAll(".fa-chevron-down");
 const accordionContent = document.querySelectorAll(".accordionContent");
