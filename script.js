@@ -25,3 +25,14 @@ let newDate = new Date().getFullYear();
 footerContent.innerHTML = `
         &#169; ${newDate} Starbucks Coffee Company. All rights reserved.
     `;
+
+function alertFunc() {
+  const askOneTime = prompt("If you confirm, you will be redirected to the official Starbucks site. Do you want to proceed?")
+  if(askOneTime === "yes"){
+    window.location.href="https://www.starbucks.com/store-locator?map=40.452974,49.959529,12z"
+  } else {
+    alert("You chose to stay here.")
+    console.log(askOneTime);
+
+  }
+}
