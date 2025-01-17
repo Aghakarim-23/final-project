@@ -20,7 +20,7 @@
         <div id="navbarDesktop" class="w-[90%] items-center hidden lg:flex justify-between gap-4 ">
             <ul class="lg:h-[4rem] lg:flex lg:items-center gap-6"> 
                 <li class="lg:h-full lg:flex lg:items-center lg:border-b-[6px] lg:border-white">
-                    <a href="menu.html" class="font-bold text-[1rem] hover:text-[#10754A]">MENU</a>
+                    <a href="#" class="font-bold text-[1rem] hover:text-[#10754A]">MENU</a>
                 </li>
                 <li class="lg:h-full lg:flex lg:items-center lg:border-b-[6px] lg:border-white">
                     <a href="#" class="font-bold text-[1rem] hover:text-[#10754A]">REWARDS</a>
@@ -53,7 +53,7 @@
         <!-- Mobile Navbar Menu -->
         <ul id="mobileNav" class="w-[70%] bg-[#ffffff] border h-screen absolute translate-x-[142%] transition-all duration-300 border-l pl-4 py-4 lg:hidden ">
             <li class="p-4 text-[1.2rem]">
-                <a href="menu.html">MENU</a>
+                <a href="#">MENU</a>
             </li>
             <li class="p-4 text-[1.2rem]">
                 <a href="#">REWARDS</a>
@@ -79,55 +79,16 @@
         <div class="border-b-2 "></div>
         <!-- first section   -->
          <!-- ! section container -->
-         <div id="sectionContainer" class="max-w-[1440px] my-5 m-auto  h-screen md:h-[50%] text-[#1E3C34] text-center">
+         <div id="sectionContainer" class="max-w-[1440px]  m-auto  h-screen md:h-[50%] text-[#1E3C34] text-center">
+            <div id="navLinks" class=" h-[3rem]  border-b-2 bg-[#F9F9F9]">
+                <ul class="max-w-[1024px] m-auto flex items-center text-[14px] gap-4 pl-5 h-full ">
+                    <li class="active:underline"><a href="#">Menu</a></li>
+                    <li class="active:underline"><a href="menuFeatured.html">Featured</a></li>
+                    <li class="active:underline"><a href="#">Previous</a></li>
+                    <li class="active:underline"><a href="#">Favorites</a></li>
+                </ul>
+            </div>
             
-            <section class="bg-[#CEE6B5] md:flex my-6">
-                    <div class="md:h-[50%] md:w-[50%]">
-                        <img class="md:h-full object-contain" src="img_2/firstSection.jpg" alt="firstSection.jpg">
-                    </div>
-                    <div class="md:h-[50%] md:m-auto md:gap-4 md:w-[50%] h-[60vh] lg:h-auto flex flex-col items-center justify-evenly gap-6 sm:gap-0 p-4 ">
-                        <p class="text-[2rem] font-semibold">The best of winter</p>
-                        <p class="text-[1.4rem] font-light">A new winter menu is here, featuring new Cortado alongside Pistachio beverages and Matcha Latte—now customized to your perfect level of sweetness.</p>
-                        <div class=" flex justify-center border border-[#1E3C34] px-4 rounded-2xl  hover:bg-[#BDD5A8] transition-all">
-                            <a href="menuFeatured.html">Add to order</a>
-                        </div>
-                    </div>
-                
-            </section>
-            <!-- second section  -->
-             <section class="bg-[#CEE6B5] md:flex my-6 text-black">
-                <div class="md:w-[50%] order-1">
-                    <img class="md:h-full object-contain" src="img_2/thirdSection.jpg" alt="thirdSection">
-                </div>
-                <div class="md:h-[50%] md:m-auto md:gap-4 md:w-[50%] h-[60vh] lg:h-auto flex flex-col items-center justify-evenly gap-6 sm:gap-0 p-4 ">
-                    <p class="text-[2rem] font-semibold">From the birthplace of coffee</p>
-                    <p class="text-[1.4rem] font-light">With distinctive floral, tangerine and lemon balm notes, Single-Origin Ethiopia is a unique global favorite.</p>
-                    <div class=" flex justify-center border border-black px-4 rounded-2xl  hover:bg-[#BDD5A8] transition-all">
-                        <a href="#">Add to order</a>
-                    </div>
-                </div>
-            </section>
-            <!-- third section  -->
-            <section class="bg-[#CEE6B5] md:flex my-6">
-                <div class="md:w-[50%] md:order-2 ">
-                    <img class="md:h-full object-contain" src="img_2/secondSection.jpg" alt="secondSection">
-                </div>
-                <div class="md:h-[50%] md:m-auto md:gap-4 md:w-[50%] order-0 h-[60vh] lg:h-auto flex flex-col items-center justify-evenly gap-6 sm:gap-0 p-4 ">
-                    <p class="text-[2rem] font-semibold">Your free coffee awaits</p>
-                    <p class="text-[1.4rem] font-light">Unlock Rewards from the very first sip, starting with a free handcrafted drink with qualifying purchase during your first week.*</p>
-                    <div class=" flex justify-center border border-[#1E3C34] px-4 rounded-2xl  hover:bg-[#BDD5A8] transition-all">
-                        <a href="joinNow.html">Join now</a>
-                    </div>
-                </div>
-            </section>
-            <!-- text section -->
-             <section class="border-b-2 border-[#E5E5E5]">
-                 <div class="md:w-[50%] flex m-auto pb-6 ">
-                    <p class="text-[13px] px-[1rem] md:text-[0.9rem]">
-                        *Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good at participating U.S. stores for a handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. Cannot be combined with other offers or discounts. Excludes delivery services. Sign up before 3/30/2025.
-                    </p>
-                 </div>
-             </section>    
             <!--! accordion container  -->
             <div class="flex lg:flex-row  items-center lg:items-start flex-col my-6 ">
                 <div class="w-full flex flex-col items-center">
