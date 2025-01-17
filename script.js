@@ -27,7 +27,7 @@ footerContent.innerHTML = `
     `;
 
 function alertFunc() {
-  const askOneTime = prompt("If you confirm, you will be redirected to the official Starbucks site. Do you want to proceed? I prefer to stay here.")
+  const askOneTime = prompt("If you confirm, you will be redirected to the official Starbucks site. Do you want to proceed? I prefer to stay here. Type 'yes' to continue.")
   if(askOneTime === "yes"){
     window.location.href="https://www.starbucks.com/store-locator?map=40.452974,49.959529,12z"
   } else {

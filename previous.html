@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/next_static/icons/favicon-16x16.png" rel="icon">
+    <link rel="shortcut icon" href="img_2/icon_starBucks.png" type="image/x-icon">
+    <title>Starbucks Coffee Company</title>
+</head>
+<body class="">
+    <main id="container" class="relative overflow-x-hidden">
+        <header class="">
+            <div class="h-[4rem] flex justify-between  items-center px-4 py-10  max-w-[1440px] m-auto">
+                <a href="index.html">
+                    <img class="w-[3rem]" src="/img_1/logo.png" alt="logo">
+                </a>
+                <!-- desktop navbar layout -->
+        <div id="navbarDesktop" class="w-[90%] items-center hidden lg:flex justify-between gap-4 ">
+            <ul class="lg:h-[4rem] lg:flex lg:items-center gap-6"> 
+                <li class="lg:h-full lg:flex lg:items-center lg:border-b-[6px] lg:border-white">
+                    <a href="menu.html" class="font-bold text-[1rem] hover:text-[#10754A]">MENU</a>
+                </li>
+                <li class="lg:h-full lg:flex lg:items-center lg:border-b-[6px] lg:border-white">
+                    <a href="#" class="font-bold text-[1rem] hover:text-[#10754A]">REWARDS</a>
+                </li>
+                <li class="lg:h-full lg:flex lg:items-center lg:border-b-[6px] lg:border-white">
+                    <a href="#" class="font-bold text-[1rem] hover:text-[#10754A]">GIFT CARDS</a>
+                </li>
+            </ul>
+            <div id="rightNav" class="lg:h-[4rem] flex items-center gap-4">
+                <div class="hover:text-[#10754A]">
+                    <i class="fa-solid fa-location-dot text-[1.2rem] mr-2 "></i>
+                    <a href="#" class="font-medium">Find a store</a>
+                </div>
+                <div class="flex gap-4">
+                    <div class="border border-black rounded-2xl px-4 py-[3px] hover:bg-[#E8E8E8] transition-all">
+                        <a href="signIn.html">Sign in</a>
+                    </div>
+                    <div class="border rounded-2xl px-4 py-[3px] bg-[#000000] text-white hover:bg-[#565656] transition-all">
+                        <a href="joinNow.html">Join now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <button onclick="openSideBar()" class="lg:hidden">
+                    <i class="fa-solid fa-bars text-[1.7rem] text-gray-600"></i>
+                    <i class="fa-solid fa-x text-[1.7rem] text-gray-600 hidden"></i>
+                </button>
+            </div>
+        </header>
+        <!-- Mobile Navbar Menu -->
+        <ul id="mobileNav" class="w-[70%] bg-[#ffffff] border h-screen absolute translate-x-[142%] transition-all duration-300 border-l pl-4 py-4 lg:hidden ">
+            <li class="p-4 text-[1.2rem]">
+                <a href="menu.html">MENU</a>
+            </li>
+            <li class="p-4 text-[1.2rem]">
+                <a href="#">REWARDS</a>
+            </li>
+            <li class="p-4 text-[1.2rem]">
+                <a href="#">GIFT CARDS</a>
+            </li>
+            <div class="w-[90%] h-[2px] m-auto bg-gray-300"></div>
+
+            <div class="flex gap-2 my-[1.5rem] ">
+                <div class="border border-black rounded-2xl px-4 py-[3px]">
+                    <a href="signIn.html">Sign in</a>
+                </div>
+                <div class="border rounded-2xl px-4 py-[3px] bg-[#000000] text-white">
+                    <a href="joinNow.html">Join now</a>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot text-[1.2rem] ml-3"></i>
+                <a href="#" class="ml-2">Find a store</a>
+            </div>
+        </ul>
+        <div class="border-b-2 "></div>
+         <!-- ! section container -->
+         <div class="max-w-[1024px] m-auto flex items-center justify-normal pl-4 h-[4rem] ">
+             <h1 class="text-[#141414] h-full flex items-center text-[1.9rem] sm:text-[2rem] lg:text-[2.5rem] font-bold ">Previous</h1>
+         </div>
+
+         <div id="sectionContainer" class="max-w-[1440px] md:flex md:justify-center md:flex-wrap md:m-auto  h-screen md:h-[50%] text-[#1E3C34]  md:gap-4 ">
+            <!-- first section   -->
+            <section class="md:flex md:my-6 flex-col md:w-[45%]">
+                <div class="pb-6">
+                    <div>
+                        <img src="img_3/moonBg.png" alt="moonBg">
+                    </div>
+                    <div class="flex flex-col pl-4 md:pl-4 py-2 gap-2">
+                        <p class="text-[#252525] font-semibold text-[1.5rem]">When history repeats itself</p>
+                        <p class="text-[#767676] text-[1rem]">Previous order will appear here to quickly order again</p>
+                    </div>
+                    <div class="flex gap-2 pl-4">
+                        <div class="w-[6rem] flex justify-center items-center py-[2px] border border-black rounded-full text-black">
+                            <a href="signIn.html">Sign in</a>
+                        </div>
+                        <div class="w-[6rem] flex justify-center items-center py-[2px] border rounded-full text-white bg-black">
+                            <a href="joinNow.html">Join now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="border-b-2 "></div>
+
+            <!--! accordion container  -->
+            <div>
+                <div class="flex lg:flex-row  items-center lg:items-start flex-col my-6 ">
+                    <div class="w-full flex flex-col items-center">
+                        <div class="flex justify-between items-center w-[90%]">
+                            <p id="title" class="text-[1.1rem] py-[0.8rem] text-black">About us</p>
+                            <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                        </div>
+                        <div class="accordionContent hidden lg:flex flex-col  w-[90%] mt-[6px]">
+                            <a href="#" class="block text-left text-[#767676] py-2">Our Coffee</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Our Company</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">About Starbucks</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Starbucks Archive</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Investor Relations</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Customer Service</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Contact Us</a>
+                        </div>
+                    </div>
+                    <!-- !2 -->
+                    <div class="w-full flex justify-center flex-col items-center">
+                        <div class="flex justify-between items-center w-[90%]">
+                            <p id="title" class="text-[1.1rem] py-[0.8rem] text-black">Careers</p>
+                            <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                        </div>
+                        <div class="accordionContent hidden lg:flex flex-col w-[90%] mt-[6px]">
+                            <a href="#" class="block text-left text-[#767676] py-2">Culture and Values</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Inclusion, Diversity, & Belonging</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">College Achievement Plan</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Alumni Community</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">U.S Careers</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Internationals Careers</a>
+                        </div>
+                    </div>
+                    <!-- !3 -->
+                    <div class="w-full flex justify-center flex-col items-center">
+                        <div class="flex justify-between items-center w-[90%]">
+                            <p id="title" class="text-[1.1rem] py-[0.8rem] text-black">Social Impact</p>
+                            <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                        </div>
+                        <div class="accordionContent hidden lg:flex flex-col w-[90%] mt-[6px]">
+                            <a href="#" class="block text-left text-[#767676] py-2">Communities</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Starbucks Foundation</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Sustainability</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Environmental and Sociaal Impact Reporting</a>
+                        </div>
+                    </div>
+                    <!-- !4 -->
+                    <div class="w-full flex justify-center flex-col items-center">
+                        <div class="flex justify-between items-center w-[90%]">
+                            <p id="title" class="text-[1rem] py-[0.8rem] text-black">For Business Partners</p>
+                            <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                        </div>
+                        <div class="accordionContent hidden lg:flex flex-col w-[90%] mt-[6px]">
+                            <a href="#" class="block text-left text-[#767676] py-2">Landlord Support Center</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Suppliers</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Corporate Gift Card Sales</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Office and Foodservice Coffee</a>
+                        </div>
+                    </div>
+                    <!-- !5 -->
+                    <div class="w-full flex justify-center flex-col items-center">
+                        <div class="flex justify-between items-center w-[90%]">
+                            <p id="title" class="text-[1.1rem] py-[0.8rem] text-black">Order and Pick Up</p>
+                            <i class="fa-solid fa-chevron-down text-[1rem] lg:hidden transition-all duration-300"></i>
+                        </div>
+                        <div class="accordionContent hidden lg:flex flex-col w-[90%] mt-[6px]">
+                            <a href="#" class="block text-left text-[#767676] py-2">Order on the App</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Order on the Web</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Delivery</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Order and Pick Up Options</a>
+                            <a href="#" class="block text-left text-[#767676] py-2">Explore and Find Coffee for Home</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- social links -->
+                <div class="flex h-[4rem] items-center gap-1 ml-5">
+                    <div class="w-[2rem] h-[2rem] flex justify-center items-center">
+                        <a href="https://open.spotify.com/user/starbucks" target="_blank">
+                            <img class="w-[100%] h-[100%] object-contain" src="img_2/spotifyIcon.png" alt="spotifyLogo">
+                        </a>
+                    </div>
+                    <div class="w-[2rem] h-[2rem] flex justify-center items-center">
+                        <a href="https://www.facebook.com/Starbucks/" target="_blank">
+                            <img class="w-[100%] h-[100%] object-contain" src="img_2/facebookIcon.png" alt="facebookLogo">
+                        </a>
+                    </div>
+                    <div class="w-[2rem] h-[2rem] flex justify-center items-center">
+                        <a href="https://www.pinterest.com/starbucks/" target="_blank">
+                            <img class="w-[100%] h-[100%] object-contain" src="img_2/pinterestIcon.png" alt="pinterestLogo">
+                        </a>
+                    </div>
+                    <div class="w-[2rem] h-[2rem] flex justify-center items-center">
+                        <a href="https://www.instagram.com/starbucks" target="_blank">
+                            <img class="w-[100%] h-[100%] object-contain" src="img_2/instagramIcon.png" alt="instagramLogo">
+                        </a>
+                    </div>
+                    <div class="w-[2rem] h-[2rem] flex justify-center items-center">
+                        <a href="https://www.youtube.com/starbucks" target="_blank">
+                            <img class="w-[100%] h-[100%] object-contain" src="img_2/youtube3.png" alt="youTubeLogo">
+                        </a>
+                    </div>
+                    <div class="w-[2rem] h-[2rem] flex justify-center items-center">
+                        <a href="https://x.com/starbucks/" target="_blank">
+                            <img class="w-[100%] h-[100%] object-contain" src="img_2/xIcon.png" alt="xLogo"></a>
+                    </div>
+                  </div>
+                  <!-- footer -->
+                <footer>
+                    <ul class="flex flex-col text-left ml-5 mb-6">
+                        <li class="py-2 hover:underline text-black"><a href="#">Privacy Notice</a></li>
+                        <li class="py-2 hover:underline text-black"><a href="#">Consumer Health Privacy Notice</a></li>
+                        <li class="py-2 hover:underline text-black"><a href="#">Terms of Use</a></li>
+                        <li class="py-2 hover:underline text-black"><a href="#">Do Not Share My Personal Information</a></li>
+                        <li class="py-2 hover:underline text-black"><a href="#">CA Supply Chain Act</a></li>
+                        <li class="py-2 hover:underline text-black"><a href="#">Accessibilty</a></li>
+                        <li class="py-2 hover:underline text-black"><a href="#">Cookie Preferences</a></li>
+                    </ul>
+                    <h4 id="footerContent" class="text-left ml-[1.25rem] text-[0.78rem] md:text-[1rem] text-[#909090]"></h4>
+                </footer>
+            </div>
+         </div>   
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
