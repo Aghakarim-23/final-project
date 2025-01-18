@@ -7468,20 +7468,75 @@ const data = {
     ]
 }
 
-// data.menus.forEach((menu) => {
-//     menu.children.forEach((child) => {
-//       child.children.forEach((subChild) => {
-//         subChild.products.forEach((product) => {
-//           console.log(product.assets.masterImage.uri);
-//         });
-//       });
-//     });
-//   });
-  
+const productPage = document.querySelector("#productPage")
 
-data.menus.forEach((menu) => {
-    menu.children.forEach((child) => {
-        console.log(child);
-    })
-    console.log(menu.lenght);
+
+const mappedData = data.menus.map((menu) => {
+    return {
+        menuTitle: menu.name,
+        categories: menu.children.map((childrenItem) => childrenItem.name)
+    };
 })
+
+mappedData.forEach((item) => {
+    console.log(item.categories)
+})
+
+
+// data.menus.map((menuTitle) => {
+//     productPage.innerHTML += `
+//          <div id="categoryTitle">
+//                 <h2>${menuTitle.name}</h2>
+//                 <ul>
+//                     <li id="childTitle"><a href="#">${menuTitle.children.name}</a></li>
+//                 </ul>
+//                </div>
+//     `
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const productPage = document.querySelector('#productPage')
+
+// data.menus.map((menuItem) => {
+//     productPage.innerHTML += `
+//         <div id="cardTemplate">
+//                     <h3>${menuItem.name}</h3>
+//                     <div>
+//                         <div>
+//                             <img src="" alt="">
+//                             <p>$</p>
+//                         </div>
+//                     </div>
+//                 </div>
+//     `
+// })
+
+
+
+
+
+
+
