@@ -7474,25 +7474,30 @@ const productPage = document.querySelector("#productPage")
 const mappedData = data.menus.map((menu) => {
     return {
         menuTitle: menu.name,
-        categories: menu.children.map((childrenItem) => childrenItem.name)
+        categories: menu.children.map((childrenItem) => childrenItem.name),
+        // subCategories: menu.children[0].map((item) => item.name)
+        
+
     };
 })
 
-mappedData.forEach((item) => {
-    console.log(item.categories)
-})
+console.log(mappedData[0].categories);
 
-
-// data.menus.map((menuTitle) => {
-//     productPage.innerHTML += `
-//          <div id="categoryTitle">
-//                 <h2>${menuTitle.name}</h2>
-//                 <ul>
-//                     <li id="childTitle"><a href="#">${menuTitle.children.name}</a></li>
-//                 </ul>
-//                </div>
-//     `
+// mappedData.forEach((item) => {
+//     console.log(item.categories)
 // })
+
+
+data.menus.map((menuTitle) => {
+    productPage.innerHTML += `
+         <div id="categoryTitle">
+                <h2>${menuTitle.name}</h2>
+                <ul>
+                    <li id="childTitle"><a href="#">${mappedData[0].categories}</a></li>
+                </ul>
+               </div>
+    `
+})
 
 
 
